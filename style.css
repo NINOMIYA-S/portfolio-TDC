@@ -19,13 +19,15 @@ header {
 
 .header-wrapper {
   display: flex;
+  margin: 0 auto;
   height: 80px;
   align-items: center;
+  width: 90%;
 }
 
 .header-title {
   display: flex;
-  margin: 0px 50px;
+  margin: 0;
   padding: auto 0;
   align-items: center;
 }
@@ -43,16 +45,48 @@ header {
 }
 
 .nav {
-  margin:0 50px 0 auto ;
+  margin: 0 0 0 auto;
+  width: 50%;
 }
 
 .nav-menu {
   display: flex;
-  gap: 80px;
-  font-size: 24px;
+  gap: 5%;
+  font-size: 22px;
   font-weight: 500;
   align-items: center;
+  padding: 0;
 }
+
+.nav-menu a {
+  width: 15%;
+  position: relative;
+  text-decoration: none;
+  color: #FDFBFB;
+  text-align: center;
+  margin: 0 20px;
+}
+
+.nav-menu a::after {
+  position: absolute;
+  left: 0;
+  content: '';
+  width: 100%;
+  align-items: center;
+  height: 2px;
+  background: #FDFBFB;
+  bottom: -8px; /*アンダーラインが現れ始める位置（aタグの下辺からの高さ）*/
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  }
+  
+.nav-menu a:hover::after {
+  visibility: visible;
+  bottom: -4px;
+  opacity: 1;
+  }
+
 
 .image {
   position: relative;
@@ -114,12 +148,10 @@ header {
   text-shadow: 3px 3px 3px #797979;
 }
 
-
 .logo2 {
   font-family: "M PLUS Rounded 1c", sans-serif;
   font-style: normal;
 }
-
 
 
 .logo2 img {
@@ -164,11 +196,11 @@ header {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 .menu-icon:hover {
-  transform: translateY(-5px);
+  transform: translateY(-7px);
   cursor: pointer;
 }
 
@@ -315,8 +347,8 @@ h2:before {
 }
 
 .marker {
-  background: linear-gradient(transparent 50%, #9cdab5 50%);
-  padding-bottom: 0.3em;
+  background: linear-gradient(transparent 60%, #9cdab5 60%);
+  padding-bottom: 0.1em;
 }
 
 .shinryojikan_1 td {
@@ -363,7 +395,7 @@ h2:before {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: all .0.5s;
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 
 .yoyaku-button:hover {
