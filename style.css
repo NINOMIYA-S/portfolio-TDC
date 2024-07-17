@@ -13,6 +13,12 @@ body {
   margin: 0;
 }
 
+span.anchor{
+  display: block;
+  padding-top: 100px;
+  margin-top: -100px;
+}
+
 header {
   position: fixed;
   background-color: #499e6b;
@@ -243,7 +249,6 @@ h2:before {
 .container {
   margin-bottom: 80px;
 }
-
 
 .osirase_table {
   margin: 50px auto 30px;
