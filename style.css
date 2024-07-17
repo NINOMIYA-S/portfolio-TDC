@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "M PLUS Rounded 1c", sans-serif;
   font-style: normal;
@@ -14,6 +18,7 @@ header {
   background-color: #499e6b;
   width: 100%;
   color: #FDFBFB;
+  z-index: 1;
 }
 
 
@@ -297,6 +302,7 @@ h2:before {
   height: 200px;
   overflow: hidden;
   cursor: pointer;
+  z-index: -1;
 }
 
 
